@@ -78,27 +78,37 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container-fluid navbar-rounded">
-    <a class="navbar-brand d-flex align-items-center gap-2"
-       href="https://www.ferrari.com" target="_blank">
-      <img src="https://logos-world.net/wp-content/uploads/2020/06/Ferrari-Logo.png"
-           class="ferrari-logo">
-      <span>Maranello Museum</span>
+ <nav class="navbar navbar-expand-lg navbar-dark ferrari-navbar fixed-top shadow">
+  <div class="container-fluid navbar-rounded d-flex justify-content-center">
+    <!-- LOGO + NOME -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="sito museo.html" target="_blank">
+
+      <img src="https://logos-world.net/wp-content/uploads/2020/06/Ferrari-Logo.png" alt="Ferrari Logo" class="ferrari-logo">
+
+      <span class="museum-name">
+        Maranello Museum
+      </span>
     </a>
 
-    <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarFerrari">
+    <!-- TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFerrari">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- MENU -->
     <div class="collapse navbar-collapse" id="navbarFerrari">
-      <ul class="navbar-nav ms-4">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Storia</a>
-        </li>
-      </ul>
+
+       <ul class="navbar-nav me-auto ms-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#carouselExample">Storia</a></li>
+              <li><a class="dropdown-item" href="#storia">Macchine in esposizione</a></li>
+            </ul>
+          </li>
+       </ul>
     </div>
   </div>
 </nav>
@@ -161,3 +171,4 @@
 
 </body>
 </html>
+
